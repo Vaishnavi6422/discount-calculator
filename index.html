@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount Calculator</title>
+    <style>
+    *{
+    color:cadetblue;
+    font-weight: bold;
+    font-family: cursive;
+    }
+    body{
+    background-color: #f0f0f0;
+    }
+    .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card h2{
+    margin-right:10x; 
+    text-align: center;
+    }
+.card {
+    width: 500px; 
+    height: 300px;
+    background-color:white;
+    border: 1px solid #ccc; 
+    padding: 20px;
+    margin-top: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+button[type="submit"] {
+    color:white;
+    border: 1px solid; 
+    padding: 5px 5px ;
+    background-color:green;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%; 
+}
+input[type="text"],
+input[type="number"] {
+    padding: 5px 5px ;
+    border-radius: 3px;
+    width: 100%;
+    border: 1px solid grey; 
+}
+
+
+</style>
+</head>
+<body>
+    <div  class="center">
+    <div class="card">
+       <h2>Discount Calculator</h2>
+       <p>Enter The Bill Amount And Discount In Percentage</p>
+        <label for="">Bill Amount</label>
+        <br>
+        <input type="text">
+         <br>
+        <label for="">Discount Percentage</label>
+        <br>
+        <input type="number"><br><br>
+        <button type="submit">Calculate</button><br>
+        <p>Total Discount Amount</p>
+    </div>
+</div>
+</body>
+</html>
