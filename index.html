@@ -18,12 +18,12 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-}
-.card h2{
+    }
+    .card h2{
     margin-right:10x; 
     text-align: center;
     }
-.card {
+    .card {
     width: 500px; 
     height: 300px;
     background-color:white;
@@ -60,14 +60,25 @@ input[type="number"] {
        <p>Enter The Bill Amount And Discount In Percentage</p>
         <label for="">Bill Amount</label>
         <br>
-        <input type="text">
+        <input id="amount" type="text">
          <br>
         <label for="">Discount Percentage</label>
         <br>
-        <input type="number"><br><br>
-        <button type="submit">Calculate</button><br>
-        <p>Total Discount Amount</p>
+        <input id="discount" type="number"><br><br>
+        <button type="submit" onclick="calculate()">Calculate</button><br>
+        <p>Total Discount Amount   <span id="totalDiscount"></span></p>
+
     </div>
 </div>
 </body>
+<script>
+function calculate(){
+    var amountValue = document.querySelector('#amount').value;
+    var discountValue = document.querySelector('#discount').value;
+    var totalDiscountValue = document.querySelector('#totalDiscount');
+    const totalDiscount = amountValue / discountValue;
+    totalDiscountValue.append(totalDiscount); 
+}
+
+</script>
 </html>
